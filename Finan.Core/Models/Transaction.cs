@@ -1,9 +1,4 @@
 ﻿using Finan.Core.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Finan.Core.Models
 {
@@ -15,7 +10,7 @@ namespace Finan.Core.Models
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime? PaidOrReceivedAt { get; set; }
 
-        public ETransactionType Type { get; set; } = ETransactionType.WithDraw;
+        public ETransactionType Type { get; set; } = ETransactionType.Withdraw;
         public decimal Amount { get; set; }
 
         public long CategoryId {  get; set; }
